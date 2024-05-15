@@ -1,0 +1,6 @@
+mixin value-box(obj)
+	.box-value
+		.box-value__icon
+			.icon(class=obj.icon)
+		h5: a(href=obj.link || "#")=obj.title
+		p=obj.text

@@ -1,0 +1,75 @@
+-
+	var
+		htmlClass = "wide wow-animation",
+		fonts = "//fonts.googleapis.com/css?family=Oswald:200,300,400,500,700%7CMontserrat:400,500,600",
+		logo = {
+			default: 'logo-default-225x39.png',
+			inverse: 'logo-default-225x39.png',
+			name: 'Travel'
+		},
+		links = {
+			getTemplate:'#get-template'
+		},
+		colors = {
+			primary: '#c4eeec'
+		},
+		menu = [
+			{
+				title: 'Home',
+				link: 'index.html'
+			},
+			{
+				title: 'About'
+			},
+			{
+			title: 'Tours',
+				dropdown: [
+					{
+						title: 'Single Tour'
+					}
+				] 
+			},
+			{
+			title: 'Services',
+				dropdown: [
+					{
+						title: 'Single Service'
+					}
+				]
+			},
+			{
+				title: 'Pages',
+				link: '#',
+				megamenu: [
+					{
+						title: 'Pages 1',
+						list: [
+							{ title: 'Typography' },
+							{ title: 'Buttons' },
+							{ title: 'Forms' },
+							{ title: 'Tabs and accordions' },
+							{ title: 'Progress bars' },
+							{ title: 'Tables' }
+						]
+					},
+					{
+						title: 'Pages 2',
+						link: null,
+						list: [
+							{ title: 'Grid system' },
+							{ title: 'Privacy policy' },
+							{ title: 'Search results' },
+							{title: 'Under-construction'}
+						]
+					}
+
+				]
+			},
+			{
+				title: 'Contacts'
+			}
+		],
+
+		// Predefined variables
+		breadcrumbs = [],
+		pageName = 'Home'

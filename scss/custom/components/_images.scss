@@ -1,0 +1,24 @@
+/** @section Images */
+
+// Standard img style
+img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+
+.brand-img{
+	@include media-breakpoint-up(xl) {
+		transition: all ease .25s;
+		&:hover{
+			opacity: .7;
+			transform: scale(1.05);
+			transition: all ease .25s;
+		}
+	}
+}

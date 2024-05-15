@@ -1,0 +1,20 @@
+extends ../_skeleton
+
+//-Includes
+include ../components/service-box
+block variables
+	- pageName = 'Tours'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	//Destinations
+	include ../sections/_destinations
+
+	//Quote Creative
+	include ../sections/_quote-creative
+
+	//Footer
+	include ../sections/_footer-classic

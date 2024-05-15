@@ -1,0 +1,16 @@
+extends ../_skeleton
+
+//-Includes
+include ../components/card
+block variables
+	- pageName = 'Single Tour'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	//Tour Details
+	include ../sections/_tour-detail
+	//Footer
+	include ../sections/_footer-classic

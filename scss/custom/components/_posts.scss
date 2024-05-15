@@ -1,0 +1,166 @@
+/** @section Posts */
+
+// Post Classic
+.post-classic {
+	max-width: 370px;
+	margin-right: auto;
+	margin-left: auto;
+	&__media{
+		overflow: hidden;
+		display: block;
+		transition: all ease .25s;
+		position: relative;
+		margin-bottom: 20px;
+		@include media-breakpoint-up(xl) {
+			margin-bottom: 30px;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba($black,.0);
+			transition: all ease .25s;
+		}
+		&:hover{
+			&:before{
+				background-color: rgba($black,.4);
+				transition: all ease .25s;
+			}
+		}
+	}
+
+	span{
+		font-size: 12px;
+		display: block;
+		margin-bottom: 5px;
+	}
+	* + p{
+		margin-top: 15px;
+	}
+}
+
+.blog-post-classic {
+	* + img{
+		margin-top: 25px;
+		@include media-breakpoint-up(xl) {
+			margin-top: 45px;
+		}
+	}
+	img + p{
+		margin-top: 15px;
+		@include media-breakpoint-up(xl) {
+			margin-top: 30px;
+		}
+	}
+	p + p.offset-md{
+		margin-top: 15px;
+		@include media-breakpoint-up(xl) {
+			margin-top: 30px;
+		}
+	}
+  p + p.offset-xl{
+		margin-top: 15px;
+   @include media-breakpoint-up(xl) {
+		 margin-top: 60px;
+   }
+  }
+	&__media-group{
+		padding-top: 50px;
+		padding-bottom: 50px;
+    @include media-breakpoint-up(lg) {
+			padding-top: 60px;
+			padding-bottom: 60px;
+    }
+    @include media-breakpoint-up(xl) {
+			padding-top: 115px;
+			padding-bottom: 115px;
+    }
+		.info-box-classic{
+			text-align: center;
+			max-width: 270px;
+			margin-right: auto;
+			margin-left: auto;
+
+			&__description{
+				bottom: 18px;
+				#{headings()}{
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	* +  .list-group {
+		margin-top: 20px;
+		@include media-breakpoint-up(xl) {
+			margin-top: 30px;
+		}
+	}
+	&__reviews {
+		* + p {
+			margin-top: 10px;
+		}
+		.row {
+			[class*="col-"] + [class*="col-"]{
+				.blog-post-classic__comment{
+					border-top: 1px solid #e0e0e0;
+					padding-top: 35px;
+					@include media-breakpoint-up(xl) {
+						padding-top: 60px;
+					}
+				}
+			}
+		}
+	}
+	.list-group {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin-top: -5px;
+
+    @include media-breakpoint-down(lg) {
+      margin-left: -15px;
+    }
+		> * {
+			margin-top: 5px;
+      @include media-breakpoint-down(lg) {
+        margin-left: 15px;
+      }
+		}
+		padding-top: 10px;
+		@include media-breakpoint-up(xl) {
+
+			padding-top: 40px;
+			margin-top: -15px;
+			> * {
+				margin-top: 15px;
+			}
+		}
+		.list-raiting + .list-raiting{
+
+			@include media-breakpoint-up(lg) {
+				margin-left: 40px;
+			}
+			@include media-breakpoint-up(xl) {
+				margin-left: 78px;
+			}
+		}
+		.list-raiting {
+			.star-group {
+				.icon {
+					color: $orange;
+					font-size: 14px;
+				}
+			}
+			li + li{
+				margin-top: 5px;
+				@include media-breakpoint-up(xl) {
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
+

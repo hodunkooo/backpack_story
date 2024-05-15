@@ -1,0 +1,47 @@
+extends ../_skeleton
+
+//-Includes
+include ../components/our-values
+include ../components/counter
+block variables
+	- pageName = 'About'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	section.section.section-lg.bg-image-5
+		.container
+			.row.row-40.flex-column-reverse.flex-xl-row
+				.col-xl-7.position-relative
+					.image-box.inverse.wow.fadeInLeft
+						.image-box__static
+							+img('img-about-2-364x459')
+						.image-box__float
+							+img('img-about-1-364x459')
+				.col-xl-5
+					h2
+						span.wow.fadeInRight.d-xl-block A Few Words
+						span.wow.fadeInRight.d-xl-block(data-wow-delay=".2s") About Us
+					p.wow.fadeInRight.offset-xl.fw-sbold(data-wow-delay=".3s") Founded in 2006, Backpack Story was established by driven, dynamic, and innovative individuals who banded together.
+					p.wow.fadeInRight(data-wow-delay=".4s")
+						|Within five years of business operations, we have expanded Backpack Story and opened up three other subsidiary offices to focus on the various needs of our customers. After just two years in the business, Journez was presented with two valuable awards – the US Travel Excellence Award 2013.
+						br.d-none.d-xl-block
+						| In addition, the travel agency has gone through the year-long Customer- Centric Initiative (CCI) program and successfully attained the US Service Class certification.
+						| We offer plenty of destinations, including Europe, USA, and Exotic long haul tours, making it professional to provide better service.
+
+	//Team
+	include ../sections/_our-team
+
+	//Our Values
+	include ../sections/_our-values
+
+	//Brands
+	include ../sections/_brands
+
+	//Steps And Counters
+	include ../sections/_steps
+
+	//Footer
+	include ../sections/_footer-classic

@@ -1,0 +1,7 @@
+mixin card-classic(obj)
+	article.card-classic
+		a(href=obj.link || "single-service.html" ).card-classic__media
+			+img(obj.img)
+		h5: a(href="single-service.html")=obj.title
+		p=obj.caption
+		a.button.button-primary-2.button-md(href=obj.link || "single-service.html") Read More

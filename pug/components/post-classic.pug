@@ -1,0 +1,9 @@
+mixin post-classic(obj)
+	.post-classic
+
+		a.post-classic__media(href=obj.link || '#')
+			+img(obj.image)
+		.post-classic-caption
+			span=obj.date
+			h5: a(href=obj.link || '#')=obj.title
+			p=obj.text

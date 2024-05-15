@@ -1,0 +1,16 @@
+extends ../_skeleton
+
+//-Includes
+include ../components/card-classic
+block variables
+	- pageName = 'Single Service'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	include ../sections/_single-service
+
+	//Footer
+	include ../sections/_footer-classic

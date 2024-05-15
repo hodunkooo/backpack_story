@@ -1,0 +1,56 @@
+/** @section Dividers */
+
+hr {
+	margin-top: 0;
+	margin-bottom: 0;
+	border-top: $hr-border-width solid $hr-border-color;
+}
+
+.divider {
+	font-size: 0;
+	line-height: 0;
+
+	&::after {
+		content: '';
+		display: inline-block;
+		width: 60px;
+		height: 2px;
+		background-color: $primary;
+	}
+}
+
+
+.divider-step{
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+	&:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		@include media-breakpoint-up(sm) {
+			right: -30px;
+		}
+		background-color: #d8d9db;
+		height: 1px;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		transform: translate(-50%,-50%);
+		left: 50%;
+		@include media-breakpoint-up(sm) {
+			left: 0;
+			transform: translate(-0%,-50%);
+		}
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		border: 2px solid #dadbdd;
+		background-color: $white;
+		top: 50%;
+
+		transition: all ease .25s;
+	}
+}

@@ -1,0 +1,17 @@
+mixin box-creative(obj)
+	.service-box-creative
+		a(href=obj.link || "#").service-box-creative__media
+			+img(obj.img)
+		.service-box-creative__caption
+			h5: a(href=obj.link || "#")=obj.title
+			.price-group
+				span.price-group__sale='$' + obj.price
+				span.price-group__price-old='$' + obj.oldPrice
+			p=obj.text
+			ul.icon-list
+				each list in obj.lists
+					li
+						span.icon(class=list.icon)
+						span= list.text
+
+

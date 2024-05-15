@@ -1,0 +1,125 @@
+/** @section Offsets */
+
+// Elements offset
+* + p {
+	margin-top: 15px;
+	@include media-breakpoint-up(xl) {
+		margin-top: 25px;
+	}
+}
+
+// Headings + Paragraph
+h2 + p,
+.heading-2 + p {
+	margin-top: 12px;
+}
+
+// Paragraph + Headings
+p + h2,
+p + .heading-2 {
+	margin-top: 15px;
+}
+
+// Tags + Tags
+p + p {
+	margin-top: 20px;
+}
+
+#{headings()} + p.offset-xl,
+* + p.offset-xl{
+	margin-top: 15px;
+	@include media-breakpoint-up(md) {
+		margin-top: 20px;
+	}
+	@include media-breakpoint-up(xl) {
+		margin-top: 50px;
+	}
+}
+
+p.offset-xl + p {
+	margin-top: 15px;
+	@include media-breakpoint-up(lg) {
+		margin-top: 25px;
+	}
+}
+
+img + p {
+	margin-top: 15px;
+}
+
+h3 + img {
+	margin-top: 42px;
+}
+
+// Classes
+* + .row {
+	margin-top: 30px;
+	@include media-breakpoint-up(xl) {
+		margin-top: 60px;
+	}
+}
+
+* + .row.offset-lg{
+	margin-top: 30px;
+	@include media-breakpoint-up(xl) {
+		margin-top: 40px;
+	}
+}
+
+* + .big {
+	margin-top: 20px;
+}
+
+* + .text-block {
+	margin-top: 30px;
+}
+
+* + .button {
+	margin-top: 30px;
+}
+
+// Classes + Tags
+.row + h3,
+.row + .heading-3 {
+	margin-top: 80px;
+}
+
+// Classes + Classes
+.container + .container {
+	margin-top: 35px;
+}
+
+.row + .row {
+	margin-top: 35px;
+}
+
+// Media offsets
+@include media-breakpoint-up(xl) {
+	* + .rd-form {
+		margin-top: 30px;
+	}
+
+	.container + .container {
+		margin-top: 60px;
+	}
+	.row + .row {
+		margin-top: 70px;
+	}
+}
+
+.offset-top-25{
+	margin-top: 25px;
+}
+.inset-xl-1{
+	@include media-breakpoint-up(xl) {
+		padding-left: 40px;
+	}
+}
+
+* + .creative-bg{
+	margin-top: 30px;
+	@include media-breakpoint-up(xl) {
+		margin-top: 50px;
+	}
+}
+

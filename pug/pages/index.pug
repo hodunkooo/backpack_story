@@ -1,0 +1,40 @@
+extends ../_skeleton
+
+
+//-Includes
+include ../components/post-classic
+
+block page
+	include ../sections/_header-classic
+
+	//Swiper
+	include ../sections/_swiper-home
+
+	//Way to Travel
+	include ../sections/_about-travel
+
+	//Call to action creative
+	include ../sections/_cta-creative
+
+	//Advantages
+	include ../sections/_advantages
+
+	//Tours
+	include ../sections/_tours
+
+	//Info Section
+	include ../sections/_info-section
+
+	section.section.section-lg.bg-image-4
+		.container
+			.row.justify-content-xl-end
+				.col-xl-9.column-bg-2
+					.quote-classic-wrap
+						.heading-4.wow.fadeInUp Our team makes every effort to deliver outstanding tour services for our numerous clients. With us, you can experience even the most exotic destinations in all their beauty.
+						p.fst-italicwow.fadeInUp(data-wow-delay=".2s") Jane Peters, Tour consultant
+
+	//Blog Post
+	include ../sections/_blog-post-1
+
+	//Footer
+	include ../sections/_footer-classic

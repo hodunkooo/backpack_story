@@ -1,0 +1,30 @@
+/** @section Counter */
+
+
+.step-list{
+  .divider-step{
+    margin-bottom: 26px;
+  }
+  .box-counter{
+    @include media-breakpoint-up(sm) {
+      text-align: left;
+    }
+    .box-counter-main{
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 1;
+
+    }
+    * + .box-counter-title{
+      margin-top: 10px;
+    }
+    .box-counter-title{
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .box-counter-divider{
+      display: none;
+    }
+  }
+}
